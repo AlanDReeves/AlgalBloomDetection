@@ -9,9 +9,6 @@ class AlgalModelVisualizer:
     # makes tif files mapping model results to lat/long
 
     def make_prediction_tif(self, source_tif_path, pred_coordinates, predictions, probabilities):
-        # need to replace this with a version that takes the original band box file to rederive exact rows/cols used
-        # storing rows/columns from source worked as well. Maybe investigate that again
-
         # take transform, pixel size, and crs
         with rasterio.open(source_tif_path) as src:
             transform = src.transform

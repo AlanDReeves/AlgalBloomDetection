@@ -109,10 +109,10 @@ class Algae_Bloom_Model:
         extra_missing_mask = np.isnan(extraTestData)
 
         # impute
-        extras_imputed = self.globalImputer.fit_transform(extraTestData)
+        extras_imputed = self.globalImputer.transform(extraTestData)
 
         # normalize
-        extras_imputed = self.scaler.fit_transform(extras_imputed)
+        extras_imputed = self.scaler.transform(extras_imputed)
 
         # concat missingness mask
         extras_finished = np.hstack([extras_imputed, extra_missing_mask.astype(int)])
@@ -147,10 +147,10 @@ class Algae_Bloom_Model:
             missing_mask = np.isnan(data)
 
             # impute
-            data_imputed = self.globalImputer.fit_transform(data)
+            data_imputed = self.globalImputer.transform(data)
 
             # normalize
-            data_imputed = self.scaler.fit_transform(data_imputed)
+            data_imputed = self.scaler.transform(data_imputed)
 
             # concat missingness mask
             data_finished = np.hstack([data_imputed, missing_mask.astype(int)])
