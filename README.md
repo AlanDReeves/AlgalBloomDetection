@@ -15,6 +15,7 @@ Scikit Learn
 
 # 500m Version
 This is the more recent version. It is far from complete, but allows the user to call all necessary functions from a terminal menu.
+It uses the MODIS 500m resolution MYD09GA product, which is more suitable for the task of detecting algae than the more broad 1km resolution product.
 
 More documentation on this to come soon.
 
