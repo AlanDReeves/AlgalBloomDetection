@@ -13,6 +13,14 @@ Pandas
 Rastorio
 Scikit Learn
 
+# 500m Version
+This is the more recent version. It is far from complete, but allows the user to call all necessary functions from a terminal menu.
+
+More documentation on this to come soon.
+
+
+# 1KM Version
+
 ## Workflow
 Convert a MODIS 1km MYD021KM product hdf format file to a tif file using algaeWarpCorrector_v2.py
 Define a box in the format of band_box.csv
