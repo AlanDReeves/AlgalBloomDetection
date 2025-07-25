@@ -7,6 +7,7 @@ This project is still in progress and this is not the most up to date branch, th
 ## Dependencies
 Besides the Python standard library, the following libraries are required:
 
+Affine
 Gdal
 Numpy
 Pandas
